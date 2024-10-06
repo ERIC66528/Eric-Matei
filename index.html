@@ -1,0 +1,227 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Matei</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- 3-bar Menu Icon -->
+    <div class="menu-icon" aria-label="Menu Icon" onclick="toggleMenu()">
+        &#9776;
+    </div>
+
+    <!-- Finger Pointer with Text -->
+    <div class="pointer-container">
+        <span class="emoji">👆</span>
+        <div class="circle">
+            <p>Click here for navigation options</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <a href="#" class="dropbtn">WhatsApp</a>
+                <div class="dropdown-content">
+                    <a href="https://wa.me/1234567890" target="_blank">WhatsApp 1</a>
+                    <a href="https://wa.me/0987654321" target="_blank">WhatsApp 2</a>
+                    <a href="https://wa.me/1122334455" target="_blank">WhatsApp 3</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="tel:+254717831209">Phone number</a></li>
+            <li class="nav-item"><a href="mailto:mateieric66@gmail.com">Email</a></li>
+            <li class="nav-item"><a href="https://www.facebook.com/profile.php?id=61556557247935" target="_blank" style="background-color: #1877F2;">Facebook ¹</a></li>
+            <li class="nav-item"><a href=https://www.facebook.com/profile.php?id=61566515734808" target="_blank" style="background-color: #1877F2;">Facebook ²</a></li>
+            <li class="nav-item"><a href="https://www.instagram.com/eri_cmatei?igsh=YzljYTk1ODg3Zg==" target="_blank" style="background-color: #C13584;">Instagram</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/eric-matei-4395982a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="background-color: #0077B5;">LinkedIn</a></li>
+            <li class="nav-item"><a href="https://youtube.com/@ericmatei-mc3pd?si=V8YaCZCKpPeAzQdr" target="_blank" style="background-color: #FF0000;">YouTube</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="about-me">
+        <h1>About Eric Matei</h1>
+        <p>My name is Eric Matei, and am an aspiring web developer currently pursuing a diploma in Information and communication  technology . I am passionate about web design, software development, and digital literacy. I love building websites, such as business platforms, and have experience with HTML, CSS, and JavaScript. I am also the founder of Rictei-softwares, where I post my latest projects. You can follow me on my social media platforms listed in the navigation bar above.</p>
+        <p>My goal is to become a professional web developer, and I'm working on expanding my knowledge to achieve that.</p>
+    </section>
+
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center; /* Center text for better alignment */
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #0056b3;
+    margin: 10px 0;
+}
+
+.pointer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin-top: 10px; /* Add space above pointer */
+}
+
+.emoji {
+    font-size: 50px;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+.circle {
+    width: 200px;
+    height: 50px; /* Adjusted height for better fit */
+    border-radius: 25px;
+    background-color: #0056b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    opacity: 1; /* Change to 1 to always show the circle */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.navbar {
+    background-color: #0056b3;
+    display: none;
+    text-align: center; /* Center nav items */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+    margin: 5px 0;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-item a:hover {
+    opacity: 0.8; /* Add hover effect */
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: #0056b3;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #003d7a;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.about-me {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h1 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Show the navbar when the 3-bar icon is clicked */
+.show {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .navbar {
+        display: block;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center; /* Center nav items in larger screens */
+    }
+
+    .nav-item {
+        margin: 0 10px; /* Space between nav items */
+    }
+}
+</style>
+
+<script>
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.classList.contains("show")) {
+        navbar.classList.remove("show");
+    } else {
+        navbar.classList.add("show");
+    }
+}
+</script>
