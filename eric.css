@@ -114,6 +114,35 @@ body {
     display: block;
 }
 
+
+.download-section {
+    background: white;
+    border: 3px solid #00FF00;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00FF00;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
 .about-me {
     background-color: white;
     padding: 20px;
